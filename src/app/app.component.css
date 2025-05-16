@@ -1,0 +1,171 @@
+.tab-content-padding {
+  padding: 20px;
+}
+
+.card_group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1 1 400px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  width: 100%;
+}
+
+mat-card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+mat-form-field {
+  flex-grow: 1;
+  background: white;
+}
+
+textarea[matInput] {
+  min-height: 100px;
+  resize: vertical;
+}
+
+
+.action-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Code Block Styling */
+.code-block {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.fixed-height-code-block {
+  min-height: calc(0.9em * 1.5 * 18 + 30px);
+  max-height: 440px;
+  overflow-y: auto;
+}
+
+
+/* Messages */
+.error-message {
+  color: #d32f2f;
+  background-color: #ffebee;
+  border: 1px solid #ef9a9a;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.info-message {
+  color: #0d47a1;
+  background-color: #e3f2fd;
+  border: 1px solid #90caf9;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 0.95em;
+}
+
+
+/* Table Styling */
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.results-header {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Table cell styling for status */
+td.status-matching {
+  color: #2e7d32;
+  font-weight: normal;
+}
+
+td.status-mismatch {
+  color: #ef6c00;
+  font-weight: bold;
+}
+
+td.status-missing {
+  color: #c62828;
+}
+
+td.status-additional {
+  color: #1565c0;
+}
+
+
+::ng-deep .mat-mdc-tab-body-content {
+  overflow: visible;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card_group {
+    flex-direction: column;
+  }
+}
+
+
+.error-snackbar {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.warning-snackbar {
+  background-color: #ff9800;
+  color: black;
+}
+
+.info-snackbar {
+  background-color: #1976d2;
+  color: white;
+}
+
+.my {
+  margin-top: 25px;
+}
+
+mat-card-title {
+  display: flex;
+  align-items: start;
+  font-size: 1.1em;
+}
+
+.title-icon {
+  margin-right: 8px;
+  color: #555;
+}
+.title-copy{
+  font-size: 0.8em;
+}
+.header-spacer {
+  flex-grow: 1;
+}
